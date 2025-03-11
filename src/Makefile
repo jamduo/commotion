@@ -32,7 +32,7 @@ PLATFORM              ?= PLATFORM_DESKTOP
 PROJECT_NAME          ?= commotion
 PROJECT_VERSION       ?= 1.0
 PROJECT_BUILD_PATH    ?= .
-PROJECT_SOURCE_FILES  ?= commotion.c
+PROJECT_SOURCE_FILES  ?= $(wildcard *.c **/*.c)
 
 RAYLIB_SRC_PATH       ?= C:\raylib\raylib\src
 RAYLIB_INCLUDE_PATH   ?= $(RAYLIB_SRC_PATH)
